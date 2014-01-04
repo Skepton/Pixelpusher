@@ -10,6 +10,8 @@ Theme for the Ghost publishing platform
 
 ##Preview
 
+![preview image](http://pixelpusher.ghost.io/content/images/2014/Jan/example.jpg)
+
 Demo of theme can be found <a href="http://pixelpusher.ghost.io/">here</a>
 
 ##Installation
