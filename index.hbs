@@ -2,25 +2,25 @@
 
 {{> header}}
 
-<main class="main_uber headline" role="main">
+<main class="main_pixel headline" role="main">
 
 	{{#foreach posts}}
 
-		<article class="article_uber" role="article" itemscope itemtype="http://schema.org/Article">
+		<article class="article_pixel" role="article" itemscope itemtype="http://schema.org/Article">
 
 			<div class="image_container"><a href="{{{url}}}"></a></div>
 
 			<div class="post_container">
 
-				<header class="postheader_uber">
+				<header class="postheader_pixel">
 
-					<time class="date_uber" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+					<time class="date_pixel" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
 						
-						{{date published_at timeago="true"}} {{#if tags}} <span>in</span> {{tags separator=" / "}} {{/if}}
+						<span class="icon-clock"></span>{{date published_at timeago="true"}} {{#if tags}} <span>in</span> {{tags separator=" / "}} {{/if}}
 
 					</time>
 
-					<h1 class="posttitle_uber" itemprop="headline">
+					<h1 class="posttitle_pixel" itemprop="headline">
 						<a href="{{{url}}}" rel="bookmark">
 
 							{{title}}
@@ -30,7 +30,7 @@
 
 				</header>
 
-				<div class="postcontent_uber" itemprop="articleBody">
+				<div class="postcontent_pixel" itemprop="articleBody">
 
 					{{content characters="0"}}
 
@@ -46,7 +46,7 @@
 
 	{{#if pagination}}
 
-		<div class="pagination_uber">
+		<div class="pagination_pixel">
 
 			{{{pagination}}}
 

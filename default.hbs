@@ -24,7 +24,7 @@
 
 	<body class="{{body_class}}">
 
-		<div class="wrapper_uber">
+		<div class="wrapper_pixel">
 
 			{{{body}}}
 
@@ -40,9 +40,9 @@
 
 			$(document).ready(function(){
 
-				$('.article_uber').each(function(){
+				$('.article_pixel').each(function(){
 
-					var image = $(this).find('.postcontent_uber p img');
+					var image = $(this).find('.postcontent_pixel p img');
 
 					if(image.length){
 
@@ -66,20 +66,20 @@
 
 			$(document).ready(function(){
 
-				if($('.postcontent_uber p').eq(0).find('img').length){
+				if($('.postcontent_pixel p').eq(0).find('img').length){
 
-					var source = $('.postcontent_uber p').eq(0).find('img').attr('src');
+					var source = $('.postcontent_pixel p').eq(0).find('img').attr('src');
 
-					$('.cover_uber').attr('src', source);
+					$('.cover_pixel').attr('src', source);
 
-					$('.postcontent_uber p').eq(0).remove();
+					$('.postcontent_pixel p').eq(0).remove();
 
 				}
 
-				$('.blogtitle_uber a').text($('.posttitle_uber').text());
+				$('.blogtitle_pixel a').text($('.posttitle_pixel').text());
 
-				$('.blogdescription_uber').remove();
-				$('.posttitle_uber').remove();
+				$('.blogdescription_pixel').remove();
+				$('.posttitle_pixel').remove();
 
 			});
 
@@ -93,7 +93,7 @@
 
 			$(window).trigger('resize');
 
-			jQuery(".blogtitle_uber a").fitText(1, { minFontSize: '20px', maxFontSize: '75px' });
+			jQuery(".blogtitle_pixel a").fitText(1, { minFontSize: '20px', maxFontSize: '75px' });
 
 		});
 
@@ -101,12 +101,12 @@
 
 			e.preventDefault();
 
-			if($('.wrapper_uber').height()<$(window).height()){
+			if($('.wrapper_pixel').height()<$(window).height()){
 
-				$('.footer_uber').css('position','absolute');
-			}else{$('.footer_uber').css('position','relative');}
+				$('.footer_pixel').css('position','absolute');
+			}else{$('.footer_pixel').css('position','relative');}
 
-			$('.cover_uber').one('load',function(){
+			$('.cover_pixel').one('load',function(){
 
 				var header_height = $(this).height();
 				var header_width = $(this).width();
@@ -150,8 +150,8 @@
 
 			});
 
-			$('.postfooter_uber address').css('height',$('.authorbio_uber').outerHeight());
-			$('.sharepost_uber').css('height',$('.authorbio_uber').outerHeight());
+			$('.postfooter_pixel address').css('height',$('.authorbio_pixel').outerHeight());
+			$('.sharepost_pixel').css('height',$('.authorbio_pixel').outerHeight());
 
 		});
 

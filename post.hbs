@@ -2,21 +2,21 @@
 
 {{> header}}
 
-<main class="main_uber post" role="main">
+<main class="main_pixel post" role="main">
 
 	{{#post}}
 <div id="trampezium"></div>
-		<article class="article_uber" role="article" itemscope itemtype="http://schema.org/Article" style="display:table;">
+		<article class="article_pixel" role="article" itemscope itemtype="http://schema.org/Article" style="display:table;">
 		
-			<header class="postheader_uber">
+			<header class="postheader_pixel">
 
-				<time class="date_uber" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+				<time class="date_pixel" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
 
-					{{date format='dddd DD MMM YYYY'}}
+					<span class="icon-clock"></span>{{date format='dddd DD MMM YYYY'}}
 
 				</time>
 
-				<h1 class="posttitle_uber" itemprop="headline">
+				<h1 class="posttitle_pixel" itemprop="headline">
 
 					{{title}}
 
@@ -26,7 +26,7 @@
 
 
 
-			<div class="postcontent_uber" itemprop="articleBody">
+			<div class="postcontent_pixel" itemprop="articleBody">
 
 				{{content}}
 
@@ -34,7 +34,7 @@
 
 			{{#if tags}}
 			
-				<div class="posttags_uber">
+				<div class="posttags_pixel">
 
 					Tags: {{tags separator=" | "}}
 
@@ -44,15 +44,15 @@
 
 			{{#if author.bio}}
 				
-				<footer class="postfooter_uber">
+				<footer class="postfooter_pixel">
 
 					<address itemscope itemtype="http://schema.org/Person">
 
 						{{#if author.image}}
-						<div class="authorimage_uber"><img src="{{author.image}}" itemprop="image" /></div>
+						<div class="authorimage_pixel"><img src="{{author.image}}" itemprop="image" /></div>
 						{{/if}}
 
-						<h4 class="authorname_uber"><span itemprop="author">
+						<h4 class="authorname_pixel"><span itemprop="author">
 
 							{{author.name}}
 
@@ -60,7 +60,7 @@
 
 						{{#if author.website}}
 
-							<div class="authorwebsite_uber"><a href="{{author.website}}" itemprop="url">
+							<div class="authorwebsite_pixel"><a href="{{author.website}}" itemprop="url">
 
 								{{author.website}}
 
@@ -70,7 +70,9 @@
 
 					</address>
 					
-					<div class="authorbio_uber">
+					<div class="authorbio_pixel">
+
+						<p class="bio">Bio:</p>
 
 						<p>{{author.bio}}</p>
 
@@ -78,20 +80,20 @@
 				
 				</footer>
 
-				<div class="sharepost_uber ">
+				<div class="sharepost_pixel ">
 
 			{{/if}}
 
 			{{#unless author.bio}}
 
-				<div class="sharepost_uber big">
+				<div class="sharepost_pixel big">
 
 			{{/unless}}
 
-				<h4 class="share_uber">Share &nbsp;</h4>
-				<a class="share_uber icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"></a>
-				<a class="share_uber icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"></a>
-				<a class="share_uber icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"></a>
+				<h4 class="share_pixel">Share &nbsp;</h4>
+				<a class="share_pixel icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"></a>
+				<a class="share_pixel icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"></a>
+				<a class="share_pixel icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"></a>
 			
 			</div>
 
@@ -101,7 +103,7 @@
 
 	{{#if pagination}}
 
-		<div class="pagination_uber">
+		<div class="pagination_pixel">
 
 			{{{pagination}}}
 
