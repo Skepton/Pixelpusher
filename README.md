@@ -1,6 +1,6 @@
 #Pixelpusher
 
-Theme for the [Ghost](www.ghost.org) publishing platform
+Theme for the [Ghost](http://www.ghost.org) publishing platform
 
 ##Features
 * Responsive (1000px down to low mobile resolution)
