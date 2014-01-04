@@ -21,6 +21,6 @@ Load downloaded zip-file into the "Custom Theme" section of the Ghost dashboard.
 ##Next
 
 * Not tested with blog logo yet.
-* Not comment-integration yes (disqus).
-* Not yes optimized javascript or css (separated/minified etc.)
+* No comment-integration yet (disqus).
+* Not optimized javascript or css yes (separation/less/minified etc.)
 * Hoping for thumbnail genereation on coming versions of Ghost
