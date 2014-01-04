@@ -1,0 +1,114 @@
+{{!< default}}
+
+{{> header}}
+
+<main class="main_uber post" role="main">
+
+	{{#post}}
+<div id="trampezium"></div>
+		<article class="article_uber" role="article" itemscope itemtype="http://schema.org/Article" style="display:table;">
+		
+			<header class="postheader_uber">
+
+				<time class="date_uber" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+
+					{{date format='dddd DD MMM YYYY'}}
+
+				</time>
+
+				<h1 class="posttitle_uber" itemprop="headline">
+
+					{{title}}
+
+				</h1>
+				
+			</header>
+
+
+
+			<div class="postcontent_uber" itemprop="articleBody">
+
+				{{content}}
+
+			</div>
+
+			{{#if tags}}
+			
+				<div class="posttags_uber">
+
+					Tags: {{tags separator=" | "}}
+
+				</div>
+
+			{{/if}}
+
+			{{#if author.bio}}
+				
+				<footer class="postfooter_uber">
+
+					<address itemscope itemtype="http://schema.org/Person">
+
+						{{#if author.image}}
+						<div class="authorimage_uber"><img src="{{author.image}}" itemprop="image" /></div>
+						{{/if}}
+
+						<h4 class="authorname_uber"><span itemprop="author">
+
+							{{author.name}}
+
+						</span></h4>
+
+						{{#if author.website}}
+
+							<div class="authorwebsite_uber"><a href="{{author.website}}" itemprop="url">
+
+								{{author.website}}
+
+							</a></div>
+						
+						{{/if}}
+
+					</address>
+					
+					<div class="authorbio_uber">
+
+						<p>{{author.bio}}</p>
+
+					</div>
+				
+				</footer>
+
+				<div class="sharepost_uber ">
+
+			{{/if}}
+
+			{{#unless author.bio}}
+
+				<div class="sharepost_uber big">
+
+			{{/unless}}
+
+				<h4 class="share_uber">Share &nbsp;</h4>
+				<a class="share_uber icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"></a>
+				<a class="share_uber icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"></a>
+				<a class="share_uber icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"></a>
+			
+			</div>
+
+		</article>
+
+	{{/post}}
+
+	{{#if pagination}}
+
+		<div class="pagination_uber">
+
+			{{{pagination}}}
+
+		</div>
+
+	{{/if}}
+
+</main>
+
+{{> footer}}

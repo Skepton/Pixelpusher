@@ -1,0 +1,27 @@
+<div role='banner' class="header_uber">
+
+	<div class="menu_list"><a class="menu_item" href="/">Blog</a><a class="menu_item" href="/about">About</a></div>
+
+	{{#if @blog.cover}}<a class="logo_uber" href="{{@blog.url}}"><img class="cover_uber" src="{{@blog.cover}}" alt="{{@blog.title}}" /></a>{{/if}}
+	
+	<h1 class="blogtitle_uber">
+
+		<a title="{{@blog.title}}" href='{{@blog.url}}'>
+
+			{{{@blog.title}}}
+
+		</a>
+
+	</h1>
+
+	<p class="blogdescription_uber">
+
+		<a title="{{@blog.title}}" href='{{@blog.url}}'>
+
+			{{@blog.description}}
+
+		</a>
+
+	</p>
+
+</div>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		{{! Document Settings }}
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		{{! Page Meta }}
+		<title>{{meta_title}}</title>
+		<meta name="description" content="{{meta_description}}" />
+		{{! Styles }}
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800|Exo+2:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+		{{! Responsive Meta Tags }}
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		{{ghost_head}}
+
+	</head>
+
+	<body class="{{body_class}}">
+
+		<div class="wrapper_uber">
+
+			{{{body}}}
+
+		</div>
+
+		{{ghost_foot}}
+
+		<script src="/assets/js/fittext.js"></script>
+
+		{{#if posts}}
+
+			<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				$('.article_uber').each(function(){
+
+					var image = $(this).find('.postcontent_uber p img');
+
+					if(image.length){
+
+						$(this).find('.image_container a').append(image);
+
+						$(this).find('.post_container').addClass('small');
+
+					}
+
+				});
+			
+			});
+
+			</script>
+
+		{{/if}}
+
+		{{#if post}}
+
+			<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				if($('.postcontent_uber p').eq(0).find('img').length){
+
+					var source = $('.postcontent_uber p').eq(0).find('img').attr('src');
+
+					$('.cover_uber').attr('src', source);
+
+					$('.postcontent_uber p').eq(0).remove();
+
+				}
+
+				$('.blogtitle_uber a').text($('.posttitle_uber').text());
+
+				$('.blogdescription_uber').remove();
+				$('.posttitle_uber').remove();
+
+			});
+
+			</script>
+
+		{{/if}}
+
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$(window).trigger('resize');
+
+			jQuery(".blogtitle_uber a").fitText(1, { minFontSize: '20px', maxFontSize: '75px' });
+
+		});
+
+		$(window).resize(function(e){
+
+			e.preventDefault();
+
+			if($('.wrapper_uber').height()<$(window).height()){
+
+				$('.footer_uber').css('position','absolute');
+			}else{$('.footer_uber').css('position','relative');}
+
+			$('.cover_uber').one('load',function(){
+
+				var header_height = $(this).height();
+				var header_width = $(this).width();
+				var parent_height = 300;
+				var parent_width = $(this).parent().parent().width();
+
+				var height_complete = '-'+(header_height-parent_height)/2+'px';
+				var width_complete = '-'+(header_width-parent_width)/2+'px';
+
+				if((header_width-parent_width)/2 <= 0){width_complete = '0px';}
+				if((header_height-parent_height)/2 <= 0){height_complete = '0px';}
+
+				$(this).css('margin-top',height_complete);
+				$(this).css('margin-left',width_complete);
+
+			}).each(function() {
+
+				if(this.complete) $(this).load();
+
+			});
+
+			$('.image_container img').one('load',function(){
+
+				var header_height = $(this).height();
+				var header_width = $(this).width();
+				var parent_height = $(this).parent().parent().parent().outerHeight();
+				var parent_width = $(this).parent().parent().width();
+
+				var height_complete = '-'+(header_height-parent_height)/2+'px';
+				var width_complete = '-'+(header_width-parent_width)/2+'px';
+
+				if((header_width-parent_width)/2 <= 0){width_complete = '0px';}
+				if((header_height-parent_height)/2 <= 0){height_complete = '0px';}
+
+				$(this).css('margin-top',height_complete);
+				$(this).css('margin-left',width_complete);
+
+			}).each(function() {
+
+				if(this.complete) $(this).load();
+
+			});
+
+			$('.postfooter_uber address').css('height',$('.authorbio_uber').outerHeight());
+			$('.sharepost_uber').css('height',$('.authorbio_uber').outerHeight());
+
+		});
+
+		</script>
+
+	</body>
+	
+
+</html>
