@@ -6,6 +6,7 @@ Theme for the [Ghost](http://www.ghost.org) publishing platform
 * Responsive (1000px down to low mobile resolution)
 * Custom Featured Image (If post has image as first line, it is used as preview in index and as header in the post view.)
 * Google Web fonts (**Open Sans** for text and **Exo 2** for headlines)
+* Headline resizing using [**Fittext**](https://github.com/davatron5000/FitText.js)
 * Looks great!
 
 ##Preview
