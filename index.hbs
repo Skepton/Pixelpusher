@@ -1,0 +1,59 @@
+{{!< default}}
+
+{{> header}}
+
+<main class="main_uber headline" role="main">
+
+	{{#foreach posts}}
+
+		<article class="article_uber" role="article" itemscope itemtype="http://schema.org/Article">
+
+			<div class="image_container"><a href="{{{url}}}"></a></div>
+
+			<div class="post_container">
+
+				<header class="postheader_uber">
+
+					<time class="date_uber" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+						
+						{{date published_at timeago="true"}} {{#if tags}} <span>in</span> {{tags separator=" / "}} {{/if}}
+
+					</time>
+
+					<h1 class="posttitle_uber" itemprop="headline">
+						<a href="{{{url}}}" rel="bookmark">
+
+							{{title}}
+
+						</a>
+					</h1>
+
+				</header>
+
+				<div class="postcontent_uber" itemprop="articleBody">
+
+					{{content characters="0"}}
+
+					{{excerpt characters="25"}}...
+
+				</div>
+
+			</div>
+
+		</article>
+
+	{{/foreach}}
+
+	{{#if pagination}}
+
+		<div class="pagination_uber">
+
+			{{{pagination}}}
+
+		</div>
+
+	{{/if}}
+
+</main>
+
+{{> footer}}
