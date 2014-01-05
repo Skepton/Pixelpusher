@@ -82,6 +82,16 @@
 				$('.blogdescription_pixel').remove();
 				$('.posttitle_pixel').remove();
 
+				$(".article_pixel img").load(function() {
+
+					$(window).trigger('resize');
+				  
+				}).each(function() {
+
+				  if(this.complete) $(this).load();
+
+				});
+
 			});
 
 
@@ -165,6 +175,7 @@
 			if($('.wrapper_pixel').height()<$(window).height()){
 
 				$('.footer_pixel').css('position','absolute');
+
 			}else{$('.footer_pixel').css('position','relative');}
 
 			$('.cover_pixel').one('load',function(){
@@ -182,8 +193,6 @@
 
 				$(this).css('margin-top',height_complete);
 				$(this).css('margin-left',width_complete);
-
-
 
 			}).each(function() {
 
