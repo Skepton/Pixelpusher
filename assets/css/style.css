@@ -69,18 +69,12 @@ body { background-color: #f0f0f0; font-family:'Open Sans',sans-serif;}
 
 	background-color: #2c3e50;
 
-	-webkit-transition: max-height ease 0.5s, min-height ease 0.5s;
-	-moz-transition: max-height ease 0.5s, min-height ease 0.5s;
-	-o-transition: max-height ease 0.5s, min-height ease 0.5s;
-	transition: max-height ease 0.5s, min-height ease 0.5s;
-
 }
 
 .header_pixel.small{
 
 	position: fixed;
 	top:0px;
-	margin: 0 auto;
 
 	z-index: 100;
 
@@ -89,10 +83,7 @@ body { background-color: #f0f0f0; font-family:'Open Sans',sans-serif;}
 	min-height: 110px;
 	max-height: 180px;
 
-	-webkit-transition: max-height ease 0.5s, min-height ease 0.5s;
-	-moz-transition: max-height ease 0.5s, min-height ease 0.5s;
-	-o-transition: max-height ease 0.5s, min-height ease 0.5s;
-	transition: max-height ease 0s, min-height ease 0s;
+	border-bottom: 3px solid rgba(255,255,255,0.8);
 
 }
 
@@ -373,11 +364,6 @@ h1 a{
 	border-right: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
 
-	-webkit-transition: opacity ease 0.3s;
-	-moz-transition: opacity ease 0.3s;
-	-o-transition: opacity ease 0.3s;
-	transition: opacity ease 0.3s;
-
 }
 
 .hide{
@@ -394,12 +380,9 @@ h1 a{
 
 }
 
-.headline .article_pixel{
+.article_pixel.animate{
 
-	-webkit-transition: opacity ease 0.3s, margin ease 0.3s;
-	-moz-transition: opacity ease 0.3s, margin ease 0.3s;
-	-o-transition: opacity ease 0.3s, margin ease 0.3s;
-	transition: opacity ease 0.3s, margin ease 0.3s;
+	margin-top: 280px;
 
 }
 

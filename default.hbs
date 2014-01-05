@@ -39,23 +39,23 @@
 
 			<script type="text/javascript">
 
-			$(document).ready(function(){
+				$(document).ready(function(){
 
-				$('.article_pixel').each(function(){
+					$('.article_pixel').each(function(){
 
-					var image = $(this).find('.postcontent_pixel p img');
+						var image = $(this).find('.postcontent_pixel p img');
 
-					if(image.length){
+						if(image.length){
 
-						$(this).find('.image_container a').append(image);
+							$(this).find('.image_container a').append(image);
 
-						$(this).find('.post_container').addClass('small');
+							$(this).find('.post_container').addClass('small');
 
-					}
+						}
 
+					});
+				
 				});
-			
-			});
 
 			</script>
 
@@ -97,18 +97,20 @@
 
 			$(document).scroll(function(){
 
-				if($(this).scrollTop() >= 70 && $(window).width() > 500 && $(window).height() > 750){
+				if($(this).scrollTop() >= 60 && $(window).width() > 500 && $(window).height() > 750){
 
 					setTimeout(function() {$('.header_pixel').addClass('small')},1);
 
-					$('.article_pixel').css('margin-top','300px');
+					$('.article_pixel').height(200);
+
+					$('.article_pixel').addClass('animate');
 
 					jQuery(".blogtitle_pixel a").fitText(1.5, { minFontSize: '20px', maxFontSize: '75px' });
 
-				}else if($(this).scrollTop() <= 150){
+				}else if($(this).scrollTop() <= 60){
 
 					$('.header_pixel').removeClass('small');
-					$('.article_pixel').css('margin-top','0px');
+					$('.article_pixel').removeClass('animate');
 
 					jQuery(".blogtitle_pixel a").fitText(1.2, { minFontSize: '20px', maxFontSize: '75px' });
 
