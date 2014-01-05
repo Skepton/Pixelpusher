@@ -160,11 +160,9 @@
 
 				setTimeout(function() {$('.article_pixel , .pagination_pixel').removeClass('hide')}, 1); 
 
-				$(window).trigger('resize');
-
 			});
 
-
+			setTimeout(function() {$(window).trigger('resize')}, 100);
 
 		});
 
@@ -172,7 +170,9 @@
 
 			e.preventDefault();
 
-			if($('.wrapper_pixel').height()<$(window).height()){
+			if($('.wrapper_pixel').height()<$(window).height()-$('.footer_pixel').height()){
+
+				console.log($('.wrapper_pixel').height()+' - '+$(window).height());
 
 				$('.footer_pixel').css('position','absolute');
 
