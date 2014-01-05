@@ -33,6 +33,7 @@
 		{{ghost_foot}}
 
 		<script src="/assets/js/fittext.js"></script>
+		<script src="/assets/js/SmoothScroll.js"></script>
 
 		{{#if posts}}
 
@@ -62,7 +63,7 @@
 
 		{{#if post}}
 
-			<script type="text/javascript">
+		<script type="text/javascript">
 
 			$(document).ready(function(){
 
@@ -83,7 +84,29 @@
 
 			});
 
-			</script>
+
+			$(document).scroll(function(){
+
+				if($(this).scrollTop() >= 70 && $(window).width() > 500 && $(window).height() > 750){
+
+					setTimeout(function() {$('.header_pixel').addClass('small')},1);
+
+					$('.article_pixel').css('margin-top','300px');
+
+					jQuery(".blogtitle_pixel a").fitText(1.5, { minFontSize: '20px', maxFontSize: '75px' });
+
+				}else if($(this).scrollTop() <= 150){
+
+					$('.header_pixel').removeClass('small');
+					$('.article_pixel').css('margin-top','0px');
+
+					jQuery(".blogtitle_pixel a").fitText(1.2, { minFontSize: '20px', maxFontSize: '75px' });
+
+				}
+
+			});
+
+		</script>
 
 		{{/if}}
 
@@ -93,7 +116,45 @@
 
 			$(window).trigger('resize');
 
-			jQuery(".blogtitle_pixel a").fitText(1, { minFontSize: '20px', maxFontSize: '75px' });
+			$(document).trigger('scroll');
+
+			jQuery(".blogtitle_pixel a").fitText(1.2, { minFontSize: '20px', maxFontSize: '75px' });
+
+		});
+
+		$(document).on('click', '.older-posts', function(e){
+
+			e.preventDefault();
+
+			var url = $(this).attr('href');
+
+			$.get(url, function(data){
+
+				$('.pagination_pixel').remove();
+
+				$(data).find(".article_pixel , .pagination_pixel").addClass('hide').appendTo(".main_pixel.headline");
+
+				$('.article_pixel').each(function(){
+
+					var image = $(this).find('.postcontent_pixel p img');
+
+					if(image.length){
+
+						$(this).find('.image_container a').append(image);
+
+						$(this).find('.post_container').addClass('small');
+
+					}
+
+				});
+
+				setTimeout(function() {$('.article_pixel , .pagination_pixel').removeClass('hide')}, 1); 
+
+				$(window).trigger('resize');
+
+			});
+
+
 
 		});
 
@@ -121,6 +182,8 @@
 
 				$(this).css('margin-top',height_complete);
 				$(this).css('margin-left',width_complete);
+
+
 
 			}).each(function() {
 

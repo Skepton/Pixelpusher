@@ -5,7 +5,9 @@
 <main class="main_pixel post" role="main">
 
 	{{#post}}
-<div id="trampezium"></div>
+		
+		<div id="trampezium"></div>
+
 		<article class="article_pixel" role="article" itemscope itemtype="http://schema.org/Article" style="display:table;">
 		
 			<header class="postheader_pixel">
@@ -36,7 +38,7 @@
 			
 				<div class="posttags_pixel">
 
-					Tags: {{tags separator=" | "}}
+					<p><span class="icon-tag"></span> {{tags separator=" | "}}</p>
 
 				</div>
 
@@ -48,8 +50,10 @@
 
 					<address itemscope itemtype="http://schema.org/Person">
 
-						{{#if author.image}}
-						<div class="authorimage_pixel"><img src="{{author.image}}" itemprop="image" /></div>
+						<p class="footer_header">Author:</p>
+
+						{{#if author.cover}}
+						<div class="authorimage_pixel"><img src="{{author.cover}}" itemprop="image" /></div>
 						{{/if}}
 
 						<h4 class="authorname_pixel"><span itemprop="author">
@@ -72,7 +76,7 @@
 					
 					<div class="authorbio_pixel">
 
-						<p class="bio">Bio:</p>
+						<p class="footer_header">Bio:</p>
 
 						<p>{{author.bio}}</p>
 
@@ -86,15 +90,16 @@
 
 			{{#unless author.bio}}
 
-				<div class="sharepost_pixel big">
+			<div class="sharepost_pixel big">
 
 			{{/unless}}
 
-				<h4 class="share_pixel">Share &nbsp;</h4>
+				<p class="footer_header">Share:</p>
+
 				<a class="share_pixel icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"></a>
 				<a class="share_pixel icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"></a>
 				<a class="share_pixel icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"></a>
-			
+
 			</div>
 
 		</article>

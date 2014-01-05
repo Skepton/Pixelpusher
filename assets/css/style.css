@@ -1,11 +1,11 @@
 @font-face {
 
 	font-family: 'fontello';
-	src: url('../fonts/fontello.eot?10838958');
-	src: url('../fonts/fontello.eot?10838958#iefix') format('embedded-opentype'),
-		url('../fonts/fontello.woff?10838958') format('woff'),
-		url('../fonts/fontello.ttf?10838958') format('ttf'),
-		url('../fonts/fontello.svg?10838958#fontello') format('svg');
+	src: url('../fonts/fontello.eot?55521422');
+	src: url('../fonts/fontello.eot?55521422#iefix') format('embedded-opentype'),
+		url('../fonts/fontello.woff?55521422') format('woff'),
+		url('../fonts/fontello.ttf?55521422') format('ttf'),
+		url('../fonts/fontello.svg?55521422#fontello') format('svg');
 	font-weight: normal;
 	font-style: normal;
 
@@ -29,6 +29,9 @@
 .icon-facebook:before { content: '\e800'; }
 .icon-gplus:before { content: '\e801'; }
 .icon-clock:before { content: '\e803'; margin-right: 0.5em}
+.icon-github-circled:before { content: '\e806'; }
+.icon-rss:before { content: '\e804'; }
+.icon-tag:before { content: '\e805'; }
 
 body { background-color: #f0f0f0; font-family:'Open Sans',sans-serif;}
 
@@ -66,6 +69,45 @@ body { background-color: #f0f0f0; font-family:'Open Sans',sans-serif;}
 
 	background-color: #2c3e50;
 
+	-webkit-transition: max-height ease 0.5s, min-height ease 0.5s;
+	-moz-transition: max-height ease 0.5s, min-height ease 0.5s;
+	-o-transition: max-height ease 0.5s, min-height ease 0.5s;
+	transition: max-height ease 0.5s, min-height ease 0.5s;
+
+}
+
+.header_pixel.small{
+
+	position: fixed;
+	top:0px;
+	margin: 0 auto;
+
+	z-index: 100;
+
+	max-width: 60em;
+
+	min-height: 110px;
+	max-height: 180px;
+
+	-webkit-transition: max-height ease 0.5s, min-height ease 0.5s;
+	-moz-transition: max-height ease 0.5s, min-height ease 0.5s;
+	-o-transition: max-height ease 0.5s, min-height ease 0.5s;
+	transition: max-height ease 0s, min-height ease 0s;
+
+}
+
+.header_pixel.small .blogtitle_pixel{
+
+	margin-top: -0.5em;
+	margin-bottom: 0em;
+	padding-bottom: 0.5;
+
+}
+
+.header_pixel.small .menu_list{
+
+	display: none;
+	
 }
 
 .main_pixel{
@@ -221,6 +263,15 @@ h1 a{
 
 }
 
+.blogtitle_pixel{
+
+	-webkit-transition: margin ease 0.2s;
+	-moz-transition: margin ease 0.2s;
+	-o-transition: margin ease 0.2s;
+	transition: margin ease 0.2s;
+
+}
+
 .blogtitle_pixel a{
 
 	display: block;
@@ -307,6 +358,7 @@ h1 a{
 .article_pixel{
 
 	display: inline-block;
+	opacity: 1;
 
 	position: relative;
 	z-index: 10;
@@ -321,11 +373,33 @@ h1 a{
 	border-right: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
 
+	-webkit-transition: opacity ease 0.3s;
+	-moz-transition: opacity ease 0.3s;
+	-o-transition: opacity ease 0.3s;
+	transition: opacity ease 0.3s;
+
+}
+
+.hide{
+
+	opacity:0;
+
+	margin-top:-1em;
+
 }
 
 .post .article_pixel{
 
 	padding-top: 2em;
+
+}
+
+.headline .article_pixel{
+
+	-webkit-transition: opacity ease 0.3s, margin ease 0.3s;
+	-moz-transition: opacity ease 0.3s, margin ease 0.3s;
+	-o-transition: opacity ease 0.3s, margin ease 0.3s;
+	transition: opacity ease 0.3s, margin ease 0.3s;
 
 }
 
@@ -450,6 +524,7 @@ time span{
 
 	position: absolute;
 	left: 0em;
+	opacity: 0.8;
 
 	z-index: 1;
 
@@ -555,6 +630,8 @@ blockquote{
 
 .postfooter_pixel address{
 
+	position: relative;
+
 	float:left;
 
 	width:50%;
@@ -567,10 +644,32 @@ blockquote{
 	border-bottom: 1px solid #e0e0e0;
 
 	text-align: center;
+	overflow: hidden;
+
+	border-bottom: 1px solid #e0e0e0;
+	border-left: 1px solid #ffffff;
+
+}
+
+.authorimage_pixel img{
+
+	position: absolute;
+	top:0;
+	left:0;
+
+	opacity: 0.6;
+
+	z-index: 1;
+
+	height:100%;
+	width:100%;
 
 }
 
 .authorname_pixel{
+
+	position: relative;
+	z-index: 10;
 
 	color: #3d3d3d;
 
@@ -579,9 +678,24 @@ blockquote{
 	margin-bottom: 0.2em;
 	margin-top: 0.8em;
 
+	text-shadow: 0px 1px 0px #ffffff;
+
+}
+
+.postfooter_pixel address .footer_header{
+
+	z-index: 10;
+
+	color: #afafaf;
+
+	text-shadow: 0px 1px 0px #ffffff;
+
 }
 
 .authorwebsite_pixel a{
+
+	position: relative;
+	z-index: 10;
 
 	color: #1abc9c;
 	padding-bottom: 1em;
@@ -629,17 +743,19 @@ blockquote{
 
 }
 
-.authorbio_pixel .bio{
+.footer_header{
 
 	position: absolute;
-	top:-1em;
+	top:-0.5em;
 	left:1em;
 
-	color: #e0e0e0;
+	color: #afafaf;
 
 }
 
 .sharepost_pixel{
+
+	position: relative;
 
 	float: left;
 
@@ -647,7 +763,7 @@ blockquote{
 
 	margin:0 auto;
 	margin-top: 2em;
-	padding:1em;
+	padding:3em 1em 1em 1em;
 
 	text-align: center;
 
