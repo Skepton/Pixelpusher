@@ -97,20 +97,18 @@
 
 			$(document).scroll(function(){
 
-				if($(this).scrollTop() >= 60 && $(window).width() > 500 && $(window).height() > 750){
+				if($(this).scrollTop() >= 50 && $(window).width() > 500 && $(window).height() > 750){
 
 					setTimeout(function() {$('.header_pixel').addClass('small')},1);
 
-					$('.article_pixel').height(200);
-
-					$('.article_pixel').addClass('animate');
+					$('.article_pixel').css('margin-top',$('.header_pixel').height()+250);
 
 					jQuery(".blogtitle_pixel a").fitText(1.5, { minFontSize: '20px', maxFontSize: '75px' });
 
-				}else if($(this).scrollTop() <= 60){
+				}else if($(this).scrollTop() <= 50){
 
 					$('.header_pixel').removeClass('small');
-					$('.article_pixel').removeClass('animate');
+					$('.article_pixel').css('margin-top',0);
 
 					jQuery(".blogtitle_pixel a").fitText(1.2, { minFontSize: '20px', maxFontSize: '75px' });
 
