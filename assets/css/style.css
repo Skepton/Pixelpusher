@@ -80,7 +80,7 @@ body { background-color: #f0f0f0; font-family:'Open Sans',sans-serif;}
 
 	max-width: 60em;
 
-	min-height: 110px;
+	min-height: 80px;
 	max-height: 180px;
 
 	border-bottom: 3px solid rgba(255,255,255,0.8);
@@ -254,15 +254,6 @@ h1 a{
 
 }
 
-.blogtitle_pixel{
-
-	-webkit-transition: margin ease 0.2s;
-	-moz-transition: margin ease 0.2s;
-	-o-transition: margin ease 0.2s;
-	transition: margin ease 0.2s;
-
-}
-
 .blogtitle_pixel a{
 
 	display: block;
@@ -363,6 +354,15 @@ h1 a{
 
 	border-right: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
+
+}
+
+.animate{
+
+	-webkit-transition: margin ease 0.3s;
+	-moz-transition: margin ease 0.3s;
+	-o-transition: margin ease 0.3s;
+	transition: margin ease 0.5s;
 
 }
 
