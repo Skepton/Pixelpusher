@@ -1,0 +1,998 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"po",
+				"position"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"sc",
+				"scrollTop"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"a",
+				"authorbio_uber"
+			],
+			[
+				"p",
+				"post"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"revi",
+				"review_string"
+			],
+			[
+				"articl",
+				"article_headline"
+			],
+			[
+				"art",
+				"article_headline"
+			],
+			[
+				"article_",
+				"article_headline"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"real_es",
+				"mysql_real_escape_string"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"pi",
+				"position"
+			],
+			[
+				"header",
+				"header-img"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"sort",
+				"sorting"
+			],
+			[
+				"head",
+				"header-item"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"ar",
+				"article_found"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"backd",
+				"background-color"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"get",
+				"getImgSize"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"arti",
+				"article_body"
+			],
+			[
+				"com",
+				"complete"
+			],
+			[
+				"is",
+				"is_array"
+			],
+			[
+				"b",
+				"box_string"
+			],
+			[
+				"pu",
+				"publishing"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"image",
+				"image_int"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"article",
+				"article_id"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"bck",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"body",
+				"body_array"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"height",
+				"height"
+			],
+			[
+				"post_",
+				"post_wrapper"
+			],
+			[
+				"menu",
+				"menu_item_at"
+			],
+			[
+				"the",
+				"thenum"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"ease",
+				"ease-out"
+			],
+			[
+				"article_heade",
+				"article_header_blur"
+			],
+			[
+				"boder",
+				"border"
+			],
+			[
+				"li",
+				"letter-spacing"
+			],
+			[
+				"su",
+				"sub_item_at"
+			],
+			[
+				"handl",
+				"handles"
+			],
+			[
+				"headline",
+				"headline_list"
+			],
+			[
+				"bacgrou",
+				"background-color"
+			],
+			[
+				"subject",
+				"subject_bar"
+			],
+			[
+				"element",
+				"element_id"
+			],
+			[
+				"pos",
+				"pos_first"
+			],
+			[
+				"artic",
+				"article_body"
+			],
+			[
+				"backg",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.hbs",
+			"settings":
+			{
+				"buffer_size": 1039,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "post.hbs",
+			"settings":
+			{
+				"buffer_size": 2265,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "default.hbs",
+			"settings":
+			{
+				"buffer_size": 6743,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "partials/header.hbs",
+			"settings":
+			{
+				"buffer_size": 549,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "partials/footer.hbs",
+			"settings":
+			{
+				"buffer_size": 529,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "partials/pagination.hbs",
+			"settings":
+			{
+				"buffer_size": 149,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/style.css",
+			"settings":
+			{
+				"buffer_size": 9260,
+				"line_ending": "Unix",
+				"name": "body { background-color: #F0F0F0; }"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 1085,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Anton/AppData/Local/Temp/Rar$DRa0.147/fontello-80c7751a/css/fontello.css",
+			"settings":
+			{
+				"buffer_size": 1918,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 118.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/content/themes/pixelpusher/assets/js/main.js",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/content/themes/pixelpusher/assets/js/SmoothScroll.js",
+		"/C/Users/Anton/AppData/Local/Temp/Rar$DRa0.370/fontello-413a368f/css/fontello.css",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/content/themes/pixelpusher/default.hbs",
+		"/C/xampp/htdocs/test.php",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/core/server/helpers/tpl/nav.hbs",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/core/server/helpers/tpl/pagination.hbs",
+		"/C/Users/Anton/AppData/Local/Temp/Rar$DRa0.087/Pixelpusher-master/README.md",
+		"/C/Users/Anton/AppData/Local/Temp/Rar$DRa0.559/fontello-2c5bb28d/css/fontello.css",
+		"/C/Users/Anton/Pixelpusher/README.md",
+		"/C/Users/Anton/Pixelpusher/README",
+		"/C/xampp/htdocs/css/article.css",
+		"/C/xampp/htdocs/article-markdown.php",
+		"/C/xampp/htdocs/css/index.css",
+		"/C/xampp/htdocs/index.php",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/content/themes/casper/default.hbs",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/content/themes/casper/index.hbs",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/content/themes/casper/assets/js/index.js",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/content/themes/pixelpusher/assets/js/slabtext.js",
+		"/C/xampp/htdocs/article.php",
+		"/C/xampp/htdocs/js/slabtext.js",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/content/themes/pixelpusher/assets/js/fittext.js",
+		"/C/xampp/htdocs/css/foundation.css",
+		"/C/BitNami/ghost-0.3.3-1/apps/ghost/htdocs/content/themes/casper/assets/css/normalize.css",
+		"/C/xampp/htdocs/css/fontello.css",
+		"/C/xampp/htdocs/css/fontello-embedded.css",
+		"/C/xampp/htdocs/.htaccess",
+		"/C/xampp/htdocs/logout.php",
+		"/C/xampp/htdocs/css/slabtext.css",
+		"/C/xampp/htdocs/dashboard.php",
+		"/C/xampp/htdocs/publish-body.php",
+		"/C/xampp/htdocs/podcast/podcast.php",
+		"/C/xampp/htdocs/article-form-post.php",
+		"/C/xampp/htdocs/menu.php",
+		"/C/xampp/htdocs/podcast/function.php",
+		"/C/xampp/htdocs/podcast/css/index.css",
+		"/C/xampp/htdocs/podcast/header.php",
+		"/C/xampp/htdocs/update-article-published.php",
+		"/C/xampp/htdocs/login.php",
+		"/C/xampp/htdocs/pixel.sublime-project",
+		"/C/xampp/htdocs/blog.sublime-project",
+		"/C/xampp/htdocs/css/menu.css",
+		"/C/xampp/htdocs/css/publish.css",
+		"/C/xampp/htdocs/include/database.php",
+		"/C/xampp/htdocs/css/footer.css",
+		"/C/xampp/htdocs/js/markdown-parse.js",
+		"/C/xampp/htdocs/sidelines.php",
+		"/C/xampp/htdocs/headlines.php",
+		"/C/xampp/htdocs/publish-new.php",
+		"/C/xampp/htdocs/article-preview-markdown.php",
+		"/C/xampp/htdocs/publish.php",
+		"/C/xampp/htdocs/header.php",
+		"/C/xampp/htdocs/web/update-article-published.php",
+		"/C/xampp/htdocs/web/article-form-post.php",
+		"/C/xampp/htdocs/web/article-body.php",
+		"/C/xampp/htdocs/web/login.php",
+		"/C/xampp/htdocs/web/include/article-form-post.php",
+		"/C/xampp/htdocs/web/database.php",
+		"/C/xampp/htdocs/web/include/menu.php",
+		"/C/xampp/htdocs/web/.htaccess",
+		"/C/xampp/htdocs/web/menu.php",
+		"/C/xampp/htdocs/web/headlines.php",
+		"/C/xampp/htdocs/web/sidelines.php",
+		"/C/xampp/htdocs/web/article-preview-markdown.php",
+		"/C/xampp/htdocs/web/pageview.php",
+		"/C/xampp/htdocs/web/footer.php",
+		"/C/xampp/htdocs/web/publish.php",
+		"/C/xampp/htdocs/web/publish-body.php",
+		"/C/xampp/htdocs/web/logout.php",
+		"/C/xampp/htdocs/web/publish-article.php",
+		"/C/xampp/htdocs/database.php",
+		"/C/xampp/htdocs/web/article-markdown.php",
+		"/C/xampp/htdocs/web/article-body-markdown.php",
+		"/C/xampp/htdocs/web/js/jquery.touchSwipe.js",
+		"/C/xampp/htdocs/web/css/fontello.css",
+		"/C/xampp/htdocs/user_add_feed.php",
+		"/C/xampp/htdocs/footer.php",
+		"/C/xampp/htdocs/web/index.php",
+		"/C/xampp/htdocs/web/article.php",
+		"/C/xampp/htdocs/web/image-upload.php",
+		"/C/xampp/htdocs/web/js/slabtext.js",
+		"/C/Users/Anton/Desktop/database.php",
+		"/C/Users/Anton/Desktop/memcached.php",
+		"/C/xampp/htdocs/podcast.php",
+		"/C/xampp/htdocs/register_user.php",
+		"/C/xampp/htdocs/web/publish-article-body.php",
+		"/C/xampp/htdocs/podcast_get_more.php",
+		"/C/xampp/htdocs/user.php",
+		"/C/xampp/htdocs/subscribe.php",
+		"/C/xampp/htdocs/browse.php",
+		"/C/xampp/htdocs/add_user.php",
+		"/C/xampp/htdocs/web/css/dropzone.css",
+		"/C/xampp/htdocs/web/js/dropzone.js",
+		"/C/xampp/htdocs/web/new-article-body.php",
+		"/C/xampp/htdocs/web/new-article.php",
+		"/C/xampp/htdocs/web/image-delete.php",
+		"/C/xampp/htdocs/web/js/emitter.js",
+		"/C/xampp/htdocs/web/old/publish-body.php",
+		"/C/xampp/htdocs/web/css/old/article.css",
+		"/C/xampp/htdocs/web/old/article_body.php",
+		"/C/xampp/htdocs/web/article_body.php",
+		"/C/xampp/htdocs/web/css/old/index.css",
+		"/C/xampp/htdocs/web/css/index.css",
+		"/C/xampp/htdocs/web/css/menu.css",
+		"/C/xampp/htdocs/web/css/foundation.css",
+		"/C/xampp/htdocs/web/old/index_old.php",
+		"/C/xampp/htdocs/web/publishing_tools_new.php",
+		"/C/xampp/htdocs/web/publishing.css",
+		"/C/xampp/htdocs/web/js/slabtext.css",
+		"/C/xampp/htdocs/web/article.css",
+		"/C/xampp/htdocs/web/index.css",
+		"/C/xampp/htdocs/web/general.css",
+		"/C/xampp/htdocs/publishing.css",
+		"/C/xampp/htdocs/web/publishing_tools.php",
+		"/C/xampp/htdocs/web/js/markdown.js",
+		"/C/xampp/htdocs/web/js/publish.js",
+		"/C/xampp/htdocs/web/header.php",
+		"/C/xampp/htdocs/web/sub.php",
+		"/C/xampp/htdocs/web/article_preview.php",
+		"/C/xampp/htdocs/web/article_retrieve.php",
+		"/C/xampp/htdocs/js/purl.js",
+		"/C/xampp/htdocs/article_preview.php",
+		"/C/xampp/htdocs/article_body.php",
+		"/C/xampp/htdocs/css/icon_font.css",
+		"/C/xampp/htdocs/css/animation.css",
+		"/C/Users/Anton/AppData/Roaming/Sublime Text 2/Packages/Theme - Default/Default.sublime-theme",
+		"/C/Users/Anton/AppData/Roaming/Sublime Text 2/Packages/User/CSS.sublime-settings",
+		"/C/Users/Anton/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ease-out",
+			"ease-in-out",
+			"0.5",
+			"uber",
+			"8",
+			"333333",
+			"$updated",
+			"$i",
+			"1abc9c",
+			"left",
+			"2em",
+			"id=\"label-headline\"",
+			"());\n",
+			"addedfile",
+			"file",
+			"'Noto Sans'",
+			"213",
+			"255",
+			"border",
+			"850px",
+			"Fresco",
+			"fresco",
+			"canvas",
+			"fresco",
+			"ALDESIGN",
+			"fresco",
+			"spinner",
+			"box-shadow",
+			"roboto condensed",
+			"pointer",
+			".post_date",
+			"href",
+			"|a|",
+			"a",
+			"href",
+			"skins",
+			");\n",
+			"top",
+			"dragstart",
+			"i",
+			"box",
+			"headlines",
+			"handles",
+			"background-color 5s"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ease",
+			"ease-out",
+			"ease-in",
+			"0.1",
+			"pixel",
+			"'Open Sans'",
+			"141",
+			"213",
+			"ALDESIGN",
+			"area",
+			"height 0.5s"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.hbs",
+					"settings":
+					{
+						"buffer_size": 1039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								975,
+								975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "post.hbs",
+					"settings":
+					{
+						"buffer_size": 2265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2109,
+								2109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 211.0,
+						"translation.y": 933.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "default.hbs",
+					"settings":
+					{
+						"buffer_size": 6743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1039,
+								1039
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 247.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "partials/header.hbs",
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "partials/footer.hbs",
+					"settings":
+					{
+						"buffer_size": 529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								27
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "partials/pagination.hbs",
+					"settings":
+					{
+						"buffer_size": 149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "assets/css/style.css",
+					"settings":
+					{
+						"buffer_size": 9260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3687,
+								3687
+							]
+						],
+						"settings":
+						{
+							"auto_name": "body { background-color: #F0F0F0; }",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3715.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 1085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								589,
+								589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Anton/AppData/Local/Temp/Rar$DRa0.147/fontello-80c7751a/css/fontello.css",
+					"settings":
+					{
+						"buffer_size": 1918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 148.0,
+	"status_bar_visible": true
+}

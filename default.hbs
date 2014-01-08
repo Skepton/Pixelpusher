@@ -33,7 +33,6 @@
 		{{ghost_foot}}
 
 		<script src="/assets/js/fittext.js"></script>
-		<script src="/assets/js/SmoothScroll.js"></script>
 
 		{{#if posts}}
 
@@ -125,7 +124,7 @@
 
 						var header_height = $(this).height();
 						var header_width = $(this).width();
-						var parent_height = 300;
+						var parent_height = $('.header_pixel').outerHeight();
 						var parent_width = $(this).parent().parent().width();
 
 						var height_complete = '-'+(header_height-parent_height)/2+'px';
@@ -190,11 +189,11 @@
 
 				}else{$('.footer_pixel').css('position','relative');}
 
-				$('.cover_pixel').one('load',function(){
+				$('.cover_pixel').on('load',function(){
 
 					var header_height = $(this).height();
 					var header_width = $(this).width();
-					var parent_height = 300;
+					var parent_height = $('.header_pixel').outerHeight();
 					var parent_width = $(this).parent().parent().width();
 
 					var height_complete = '-'+(header_height-parent_height)/2+'px';
@@ -228,6 +227,8 @@
 
 					$('.article_pixel').removeClass('animate').css('margin-top',$('.header_pixel').height()+250);
 
+					$(window).trigger('resize');
+
 				}else if($(this).scrollTop() <= 50){
 
 					jQuery(".blogtitle_pixel a").fitText(1.2, { minFontSize: '20px', maxFontSize: '75px' });
@@ -239,6 +240,8 @@
 					$('.article_pixel').css('margin-top',0);
 
 					$('.header_pixel').removeClass('small');
+
+					$(window).trigger('resize');
 
 				}
 
