@@ -35,6 +35,9 @@
 
 body { background-color: #f0f0f0; font-family:'Open Sans',sans-serif;}
 
+a{color:#2c3e50;}
+a:hover{color:#1abc9c;}
+
 *,
 *:before,
 *:after {
@@ -61,8 +64,8 @@ body { background-color: #f0f0f0; font-family:'Open Sans',sans-serif;}
 
 	width:100%;
 
-	min-height:300px;
-	max-height:300px;
+	min-height:400px;
+	max-height:400px;
 
 	padding:2em;
 	overflow: hidden;
@@ -91,7 +94,7 @@ body { background-color: #f0f0f0; font-family:'Open Sans',sans-serif;}
 
 .header_pixel.small img{
 
-	opacity: 0.2;
+	opacity: 0.9;
 
 }
 
@@ -213,10 +216,10 @@ h1 a{
 	top:0px;
 	z-index: 1;
 
-	opacity: 0.3;
+	opacity: 0.9;
 
-	min-width:100%;
-	min-height: 300px;
+	width:100%;
+	min-height: 400px;
 
 	-webkit-transition: opacity ease 0.3s;
 	-moz-transition: opacity ease 0.3s;
@@ -365,9 +368,29 @@ h1 a{
 
 	background-color: #ffffff;
 	margin-bottom: 2em;
+	padding-bottom: 1em;
 
 	border-right: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
+
+}
+
+.post .article_pixel .postheader_pixel{
+
+	position: relative;
+
+	display: table;
+
+	width: 90%;
+	margin: 0 auto;
+
+	padding-bottom: 0.2em;
+
+}
+
+.article_pixel .postheader_pixel h1{
+
+	margin-top: 0em;
 
 }
 
@@ -472,7 +495,10 @@ time span{
 
 .post time{
 
-	top:1em;
+	right:auto;
+	top:0.2em;
+	left: 0em;
+
 
 }
 
@@ -502,12 +528,15 @@ time span{
 
 }
 
-.posttitle_pixel{
+.post .posttitle_pixel{
 
 	width:100%;
 	margin: 0 auto;
 
-	margin-bottom:0.3em;
+	margin-bottom:0.1em;
+	margin-top:0.3em !important;
+
+	text-align: center;
 
 }
 

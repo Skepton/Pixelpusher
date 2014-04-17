@@ -10,8 +10,8 @@
 		<title>{{meta_title}}</title>
 		<meta name="description" content="{{meta_description}}" />
 		{{! Styles }}
-		<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+		<link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800|Exo+2:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
 		{{! Responsive Meta Tags }}
@@ -152,6 +152,16 @@
 
 		<script type="text/javascript">
 
+			$(window).load(function(){
+
+				if($('.postcontent_pixel p').eq(0).find('img').length){
+
+					$('.postcontent_pixel p').eq(0).find('img').hide();
+
+				}
+
+			});
+
 			$(document).ready(function(){
 
 				if($('.postcontent_pixel p').eq(0).find('img').length){
@@ -164,10 +174,8 @@
 
 				}
 
-				$('.blogtitle_pixel a').text($('.posttitle_pixel').text());
-
 				$('.blogdescription_pixel').remove();
-				$('.posttitle_pixel').remove();
+				$('.blogtitle_pixel a').remove();
 
 				$(".article_pixel img").load(function() {
 
@@ -214,10 +222,14 @@
 				$('.postfooter_pixel address').css('height',$('.authorbio_pixel').outerHeight());
 				$('.sharepost_pixel').css('height',$('.authorbio_pixel').outerHeight());
 
+				jQuery(".postheader_pixel h1").fitText(0.85, { minFontSize: '20px' });
+
 			});
 
 
 			$(window).scroll(function(){
+
+				console.time('test');
 
 				if($(this).scrollTop() > 50 && $(window).width() > 500 && $(window).height() > 500){
 
@@ -225,9 +237,8 @@
 
 					jQuery(".blogtitle_pixel a").fitText(1.5, { minFontSize: '20px', maxFontSize: '32px' });
 
-					$('.article_pixel').removeClass('animate').css('margin-top',$('.header_pixel').height()+250);
+					$('.article_pixel').removeClass('animate').css('margin-top',$('.header_pixel').height()+230);
 
-					$(window).trigger('resize');
 
 				}else if($(this).scrollTop() <= 50){
 
@@ -241,9 +252,9 @@
 
 					$('.header_pixel').removeClass('small');
 
-					$(window).trigger('resize');
-
 				}
+
+				console.timeEnd('test');
 
 			});
 
