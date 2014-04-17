@@ -13,7 +13,8 @@ Theme for the [Ghost](http://www.ghost.org) publishing platform
 
 ##Preview
 
-![preview image](http://pixelkultur.se/wp-content/uploads/2014/04/Capture1.jpg)
+![preview image](http://pixelkultur.se/wp-content/uploads/2014/04/Capture1.png)
+![preview image](http://pixelkultur.se/wp-content/uploads/2014/04/Capture2.png)
 
 Demo of theme can be found <a href="http://pixelpusher.ghost.io/">here</a>
 
