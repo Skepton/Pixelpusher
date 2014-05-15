@@ -8,6 +8,7 @@ Theme for the [Ghost](http://www.ghost.org) publishing platform
 * Google Web fonts (**Open Sans** for text and **Exo 2** for headlines)
 * Headline resizing using [**Fittext**](https://github.com/davatron5000/FitText.js)
 * No pagination, "Load Older Posts ->" loads new posts dynamically and with a subtle fade-in
+* Embeded videos (youtube and vimeo) resize and look great!
 * Looks great!
 
 ##Preview
