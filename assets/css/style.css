@@ -132,7 +132,7 @@ a:hover{color:#1abc9c;}
 .footer_pixel{
 
 	width:100%;
-	padding:2em;
+	padding:1em;
 
 	background-color: #3d3d3d;
 
@@ -349,6 +349,30 @@ h1 a{
 .postfooter_pixel address{
 
 	color:#afafaf;
+
+}
+
+.subscribe_pixel a{
+
+	padding:0.8em 0.9em 0.8em 1em;
+
+}
+
+.subscribe_pixel a:hover{
+
+	-webkit-border-radius: 3em; 
+	-moz-border-radius: 3em; 
+	border-radius: 3em; 
+
+	border: 1px solid #e0e0e0;
+
+	background-color: #f5f5f5;
+
+}
+
+.subscribe_pixel{
+
+	margin-bottom: 1em !important;
 }
 
 /************/
@@ -539,7 +563,7 @@ time span{
 	margin-bottom:0.1em;
 	margin-top:0.3em !important;
 
-	text-align: center;
+	text-align: left;
 
 }
 

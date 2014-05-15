@@ -190,6 +190,36 @@
 
 				});
 
+				(function($) {
+					// Responsive videos
+					var all_videos = $( 'iframe[src^="http://player.vimeo.com"], iframe[src^="http://www.youtube.com"], iframe[src^="//www.youtube.com"], object, embed' );
+
+					all_videos.each(function() {
+						var el = $(this);
+
+						el
+							.attr( 'data-aspectRatio', el.height() / el.width() )
+							.attr( 'data-oldWidth', el.attr( 'width' ) );
+					} );
+					
+					$(window)
+						.resize( function() {
+							all_videos.each( function() {
+								var el = $(this),
+									newWidth = el.parents( '.postcontent_pixel' ).innerWidth(),
+									oldWidth = el.attr( 'data-oldWidth' );
+									el
+										.removeAttr( 'height' )
+										.removeAttr( 'width' )
+										.width( newWidth )
+								    		.height( newWidth * el.attr( 'data-aspectRatio' ) );
+							} );
+						} )
+						.resize();
+				})(jQuery);
+
+				$(window).trigger('resize');
+
 			});
 
 			$(window).resize(function(){
@@ -220,10 +250,9 @@
 				$('.postfooter_pixel address').css('height',$('.authorbio_pixel').outerHeight());
 				$('.sharepost_pixel').css('height',$('.authorbio_pixel').outerHeight());
 
-				jQuery(".postheader_pixel h1").fitText(0.85, { minFontSize: '20px' });
+				jQuery(".postheader_pixel h1").fitText(1.1, { minFontSize: '40px', maxFontSize: '90px' });
 
 			});
-
 
 			$(window).scroll(function(){
 
